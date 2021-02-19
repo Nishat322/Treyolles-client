@@ -5,14 +5,22 @@ import store from './store.js'
 
 import './App.css'
 
-function App(props){
-  return (
-    <main className = 'App'>
-      <header class="App-header">
+class App extends React.Component {
+  static defaultProps = {
+    store: {
+      lists: [],
+      allCards: {}
+    }
+  }
+
+  render() { 
+    return (
+      <main className = 'App'>
+      <header className = "App-header">
         <h1>Trelloyes!</h1>
       </header>
-      <div class="App-list">
-        {props.store.lists.map(list => (
+      <div className = "App-list">
+        {this.props.store.lists.map(list => (
           <List
            key = {list.id}
            header = {list.header}
@@ -21,7 +29,8 @@ function App(props){
         ))}
       </div>
     </main>
-  )
+    );
+  }
 }
 
 export default App
