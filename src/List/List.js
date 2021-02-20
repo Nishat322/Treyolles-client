@@ -6,6 +6,12 @@ import './List.css'
 
 
 class List extends Component {
+    static defaultProps = {
+        id: '',
+        header: '',
+        cards: [],
+        onAddCard: () => {},
+    }
     render(){
         return(
             <div className='List'>
@@ -34,10 +40,5 @@ class List extends Component {
         )
     }
 }
-
-List.defaultProps = {
-    onAddCard: () => {},
-}
- 
 export default List
 
