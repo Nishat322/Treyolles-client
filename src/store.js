@@ -23,7 +23,7 @@ const STORE = {
     ],
     allCards: {
       'a': { id: 'a', title: 'First card', content: 'lorem ipsum' },
-      'b': { id: 'b', title: 'Second card', content: 'lorem ipsum' },
+      'b': { id: 'b', title: 'Second card', content: 'lorem hahah' },
       'c': { id: 'c', title: 'Third card', content: 'lorem ipsum' },
       'd': { id: 'd', title: 'Fourth card', content: 'lorem ipsum' },
       'e': { id: 'e', title: 'Fifth card', content: 'lorem ipsum' },
